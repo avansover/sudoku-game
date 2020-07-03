@@ -540,7 +540,7 @@ function checkDifficulty() {
 
     for (var i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
-            localStorage.setItem('selectedDifficulty', radios[i].value);
+            localStorage.setItem('SelectedDifficulty', radios[i].value);
             window.open("Sudoku.html", "_self")
         }
     }
