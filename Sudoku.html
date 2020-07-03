@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SUDOKUMASTER</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Sudoku.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("input").keydown(function() {
+
+            });
+            $("input").keyup(function() {
+                var fmat3 = sudokuFiller(fmat2)
+                sudokuFullChecker(fmat3)
+                sudokuSemiChecker(fmat3)
+                    //console.log(sudokuFullChecker(sudokuFiller(fmat2)));
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div id="upper" class="background">
+        <div id="upperLeft">
+            <img src="backGroundLeft.png" alt="background">
+        </div>
+
+        <div id="upperRight">
+            <img src="backGroundRight.png" alt="background">
+        </div>
+    </div>
+
+    <div id="headerDiv"></div>
+
+    <div id="secondDiv">
+
+        <table id="secondDivTable">
+
+            <tr id="secondDivTr">
+
+                <td id="secondDivTd1"></td>
+
+                <td id="secondDivTd2">
+                    <div id="clockDiv"><label id="minutes" class="clock">00</label><label class="clock">:</label><label id="seconds" class="clock">00</label></div>
+                </td>
+
+                <td id="secondDivTd3">
+                    <table id="sudokuGrid"></table>
+                </td>
+
+            </tr>
+        </table>
+
+        <div id="sudokuDiv">
+
+        </div>
+    </div>
+
+    <div id="thirdDiv">
+
+        <table id="thirdDivTable">
+
+            <tr id="thirdDivTr">
+
+                <td id="thirdDivTd1"></td>
+
+                <td id="thirdDivTd2">
+                    <div id="prepBox">
+                        <div>
+                            choose your difficulty
+                        </div>
+                        <div id=radioBox>
+                            <input type="radio" class="radDifficulty" name="radioDifficulty" value="3">
+                            <label for="Hard">Hard</label>
+                            <input type="radio" class="radDifficulty" name="radioDifficulty" value="2">
+                            <label for="Medium">Medium</label>
+                            <input type="radio" class="radDifficulty" name="radioDifficulty" value="1">
+                            <label for="Easy">Easy</label>
+                            <input type="radio" class="radDifficulty" name="radioDifficulty" value="0.3">
+                            <label for="Kids">Kids</label>
+                        </div>
+
+                        <div id=buttonBox>
+                            <button id="againButton" onclick="checkDifficulty()">Again!</button>
+                        </div>
+                    </div>
+                </td>
+
+                <td id="thirdDivTd3"></td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div id="forthDiv">
+
+        <table id="forthDivTable">
+
+            <tr id="thirdDivTr">
+
+                <td id="forthDivTd1"></td>
+
+                <td id="forthDivTd2">
+                    <div id="audio">
+                        <audio controls loop src="Michael_Ortega-nspire_Me.mp3"></audio>
+                    </div>
+                </td>
+
+                <td id="forthDivTd3"></td>
+
+            </tr>
+        </table>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src='Sudoku.js'></script>
+
+</body>
+
+</html>

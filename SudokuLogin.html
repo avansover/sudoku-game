@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SUDOKUMASTER Login</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='SudokuLogin.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="upper" class="background">
+        <div id="upperLeft">
+            <img src="backGroundLeft.png" alt="background">
+        </div>
+
+        <div id="upperRight">
+            <img src="backGroundRight.png" alt="background">
+        </div>
+    </div>
+
+    <div id="headerDiv"></div>
+
+    <div id="secondDiv">
+
+        <img src="header.png" alt="header">
+
+    </div>
+
+
+    <div id="thirdDiv">
+        <div>
+            <input type="text" id="userNameInput" placeholder="User Name">
+        </div>
+        <div id="userNameOutput" class="loginOutput">
+
+        </div>
+        <div>
+            <input type="password" id="passwordInput" placeholder="Password">
+        </div>
+        <div id="passwordOutput" class="loginOutput">
+
+        </div>
+        <div>
+            <button id="loginButton" onclick="radius()">Log In</button>
+        </div>
+        <div id="welcomeOutput" class="loginOutput">
+
+        </div>
+    </div>
+
+    <div id="forthDiv">
+        <div id=prepBox>
+            <div>
+                choose your difficulty
+            </div>
+            <div id=radioBox>
+                <input type="radio" class="radDifficulty" name="radioDifficulty" value="3">
+                <label for="Hard">Hard</label>
+                <input type="radio" class="radDifficulty" name="radioDifficulty" value="2">
+                <label for="Medium">Medium</label>
+                <input type="radio" class="radDifficulty" name="radioDifficulty" value="1">
+                <label for="Easy">Easy</label>
+                <input type="radio" class="radDifficulty" name="radioDifficulty" value="0.3">
+                <label for="Kids">Kids</label>
+            </div>
+
+            <div id=buttonBox>
+                <button id="playButton" onclick="checkDifficulty()">Start Playing</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src='SudokuLogin.js'></script>
+
+</body>
+
+</html>

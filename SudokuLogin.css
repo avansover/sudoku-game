@@ -1,0 +1,107 @@
+/* backround */
+
+#upper {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+}
+
+#upperLeft {
+    z-index: -1;
+    position: absolute;
+}
+
+#upperRight {
+    z-index: -1;
+    position: absolute;
+    right: 0px;
+}
+
+
+/* site */
+
+#headerDiv {
+    width: 100%;
+    height: 180px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: black;
+}
+
+#secondDiv {
+    width: 100%;
+    height: 220px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: black;
+    text-align: center;
+    align-items: center;
+}
+
+#thirdDiv {
+    width: 100%;
+    height: 200px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: black;
+    text-align: center;
+}
+
+#forthDiv {
+    width: 100%;
+    height: 200px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: black;
+    text-align: center;
+}
+
+.loginOutput {
+    height: 24px;
+}
+
+#loginBox {
+    height: 138px;
+}
+
+#prepBox {
+    padding-top: 20px;
+}
+
+#welcomeOutput {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#userNameInput {
+    margin-top: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 4px;
+    background-color: rgb(225, 225, 225);
+}
+
+#passwordInput {
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 4px;
+    background-color: rgb(225, 225, 225);
+}
+
+#loginButton {
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 4px;
+    background-color: rgb(225, 225, 225);
+}
+
+#playButton {
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 4px;
+    background-color: rgb(225, 225, 225);
+}
